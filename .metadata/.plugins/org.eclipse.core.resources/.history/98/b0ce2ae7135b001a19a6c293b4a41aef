@@ -35,14 +35,20 @@
 		<tbody>
 			<tr th:each="evento : ${eventos}">
 
-				<td><span th:text="${evento.nome}"></span></td>
+				<td><a
+					th:href="${(#mvc.url('EC#detalhesEvento').arg(0,evento.codigo)).build()}">
+						<span th:text="${evento.nome}"></span>
+				</a></td>
 				<td><span th:text="${evento.local}"></span></td>
 				<td><span th:text="${evento.data}"></span></td>
 				<td><span th:text="${evento.horario}"></span></td>
-				<td><a
-					th:href="${(#mvc.url('EC#detalhesEvento').arg(0,evento.codigo)).build()}"
+				<td><a th:href="${(#mvc.url('EC#detalhesEvento').arg(0,evento.codigo)).build()}"
 					class="btn-floating btn-large waves-effect waves-light"><i
-						class="material-icons">group_add</i></a>
+						class="material-icons">group_add</i></a> 
+						<a
+					th:href="${(#mvc.url('EC#detalhesEvento').arg(0,evento.codigo)).build()}"
+					class="waves-effect waves-light btn"><i
+						class="material-icons right">group_add</i></a></td>
 			</tr>
 
 		</tbody>
