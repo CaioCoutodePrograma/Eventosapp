@@ -1,0 +1,7 @@
+package com.eventosapp.models;
+
+public class Convidado {
+	private String eg;
+	private String nomeconvidado;
+	
+}

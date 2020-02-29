@@ -1,0 +1,5 @@
+package com.eventosapp.repositorio;
+
+public interface ConlvidaoRepository {
+
+}

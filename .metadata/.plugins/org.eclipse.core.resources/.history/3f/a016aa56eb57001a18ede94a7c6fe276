@@ -1,0 +1,3 @@
+package com.eventoapp.eventoapp
+
+import org.springframework.stereotype.Controller;
