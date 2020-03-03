@@ -9,18 +9,34 @@
 <!--Import materialize.css-->
 <link type="text/css" rel="stylesheet"
 	href="materialize/css/materialize.min.css" media="screen,projection" />
+	<link rel="stylesheet" href="style/style.css">
 
 
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+	<header>
+		<nav>
+			<div class="navbar-fixed">
+				<nav>
+					<div class="nav-wrapper">
+						<a href="#!" class="brand-logo">EventosApp</a>
+						<ul class="right hide-on-med-and-down">
+							<li><a class="waves-effect waves-light btn" href="/eventos"><i class="material-icons left">format_list_bulleted</i>Lista
+									de Evento</a></li>
+							<li><a class="waves-effect waves-light btn" href="/cadastrarEvento"><i
+									class="material-icons left">add</i>Cadastrar Evento</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</nav>
+	</header>
 	<h1>Cadastro de Eventos</h1>
-	<a href="/eventos" class="waves-effect waves-light btn"><i
-		class="material-icons right">format_list_bulleted</i>Visualizar
-		Eventos</a>
 	<br>
 	<br>
+	<div class="container formEvento">
 	<form class="container" method="post">
 		<div class="input-field">
 			<input class="validate" id="nome" type="text" value="" name="nome"
@@ -46,12 +62,13 @@
 			Salvar <i class="material-icons right">send</i>
 		</button>
 	</form>
+	</div>
 
 
 
 
 	<!--JavaScript at end of body for optimized loading-->
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-	
+
 </body>
 </html>
